@@ -1,0 +1,32 @@
+{
+  "name": "@ihsnishnogl/noline",
+  "version": "0.1.0",
+  "description": "CLI to scan source files and remove comments safely.",
+  "type": "module",
+  "bin": {
+    "noline": "./dist/src/index.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "node --enable-source-maps --loader ts-node/esm src/index.ts",
+    "test": "node dist/tests/runTests.js",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "cli",
+    "comments",
+    "cleanup",
+    "typescript",
+    "oss"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.21",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
